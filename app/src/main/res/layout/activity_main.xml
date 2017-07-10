@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jdixit1.learnhssprarthna.MainActivity"
+    android:id="@+id/layout"
+    android:background="#ea711a">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_play"
+        android:src="@drawable/ic_action_playback_play"
+        android:onClick="playMusic"
+        android:layout_above="@+id/imageButton_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_pause"
+        android:src="@drawable/ic_action_playback_pause"
+        android:onClick="pauseMusic"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_rewind"
+        android:src="@drawable/ic_action_playback_rewind"
+        android:onClick="onRewind"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SubTitle"
+        android:id="@+id/textView_subtitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#2e33ce"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jdixit1.learnhssprarthna.HelpActivity"
+    tools:showIn="@layout/activity_help">
+    <ScrollView
+        android:id="@+id/scroller_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips for learning HSS prarthna
+
+This app has 3 buttons PLAY, PAUSE and REWIND (last 10 seconds). I have purposefully not used Forward or audio scrolling
+button to help listen full prarthna each time as I believe that listening full prathna will help to remember and learn it faster.
+
+Prathna consist of 8 stanza
+
+1. Play Prathna and keep attention on on screen subtitle(in Sanskrit and English) - stanza after stanza. Repeat it for few times.
+This will help to understand pronounciation of each word in a stanza and pace and ridham of stanza
+2. Once you become familiar with each stanza and pronounciation of most difficult words, play it again.
+This time after listening audio and viewing each subtitle, PAUSE for a while and sing loudly the part of stanza
+on the screen. After it hit play or pause button again and continue listening and viewing the next stanza
+and again PAUSE it and again sing aloud from the subtitle on screen or from the mind has remembered the last stanza.
+Continue this PAUSE and PLAY cycle for all 8 stanza. If needed continue this cycle for whole prarthana for a few more times
+3. While in PAUSE if forget the tune and ridham of the stanza just listened then make use of Rewind button.
+The Rewind button can be played while in Pause or in Play. It will re-play lasy 10 seconds audio (subtitle will not be rewinded).
+The replaying will allow to master tune and ridham of difficult stanzas.  "
+        android:id="@+id/textView_help"
+        android:layout_centerHorizontal="true"
+        android:scrollIndicators="top|left|bottom|start|end|right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+    </ScrollView>
+</RelativeLayout>
